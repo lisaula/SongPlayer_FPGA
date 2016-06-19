@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data11101_251</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data33101_24_f5_0</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data11101_2612</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data33101_25_f5_5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data11101_275</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data33101_26_f5_2</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data11101_2711</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data33101_26_f5_5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data11101_2715</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data11101_26_f5_71_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data12941</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data11101_243_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data11101_25</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data33101_24_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data11101_27</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data33101_26_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data11101_284</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data33101_27_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data11101_30</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data33101_29_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">rom/Mrom_data15091</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">rom/Mrom_data11101_2712_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+</messages>
+
