@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.37 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.37 secs
  
 --> Reading design: Main.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -120,7 +120,7 @@ Analysis of file <"Main.prj"> succeeded.
 Analyzing hierarchy for module <Main> in library <work>.
 
 Analyzing hierarchy for module <CLK_Divider> in library <work> with parameters.
-	counter_limit = "0110000110101"
+	counter_limit = "0011000011011"
 
 Analyzing hierarchy for module <Rom_MarioSong> in library <work>.
 
@@ -132,11 +132,11 @@ Analyzing top module <Main>.
 Module <Main> is correct for synthesis.
  
 Analyzing module <CLK_Divider> in library <work>.
-	counter_limit = 13'b0110000110101
+	counter_limit = 13'b0011000011011
 Module <CLK_Divider> is correct for synthesis.
  
 Analyzing module <Rom_MarioSong> in library <work>.
-INFO:Xst:2546 - "Rom_MarioSong.v" line 13: reading initialization file "MarioSong.mif".
+INFO:Xst:2546 - "Rom_MarioSong.v" line 13: reading initialization file "new_song.mif".
 WARNING:Xst:905 - "Rom_MarioSong.v" line 10: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rom_content>
 Module <Rom_MarioSong> is correct for synthesis.
@@ -230,14 +230,7 @@ Optimizing unit <Main> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 63.
-FlipFlop address_0 has been replicated 2 time(s)
-FlipFlop address_1 has been replicated 2 time(s)
-FlipFlop address_2 has been replicated 3 time(s)
-FlipFlop address_3 has been replicated 3 time(s)
-FlipFlop address_4 has been replicated 6 time(s)
-FlipFlop address_5 has been replicated 3 time(s)
-FlipFlop address_6 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 45.
 
 Final Macro Processing ...
 
@@ -245,8 +238,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 49
- Flip-Flops                                            : 49
+# Registers                                            : 29
+ Flip-Flops                                            : 29
 
 =========================================================================
 
@@ -275,24 +268,24 @@ Design Statistics
 # IOs                              : 6
 
 Cell Usage :
-# BELS                             : 7712
+# BELS                             : 4988
 #      GND                         : 1
 #      INV                         : 10
-#      LUT1                        : 38
-#      LUT2                        : 46
-#      LUT3                        : 1249
-#      LUT4                        : 3325
+#      LUT1                        : 40
+#      LUT2                        : 146
+#      LUT3                        : 548
+#      LUT4                        : 2571
 #      LUT4_L                      : 1
-#      MUXCY                       : 44
-#      MUXF5                       : 1646
-#      MUXF6                       : 776
-#      MUXF7                       : 368
-#      MUXF8                       : 168
+#      MUXCY                       : 45
+#      MUXF5                       : 1120
+#      MUXF6                       : 347
+#      MUXF7                       : 94
+#      MUXF8                       : 25
 #      VCC                         : 1
 #      XORCY                       : 39
-# FlipFlops/Latches                : 49
+# FlipFlops/Latches                : 29
 #      FDE                         : 1
-#      FDR                         : 48
+#      FDR                         : 28
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 5
@@ -305,9 +298,9 @@ Device utilization summary:
 
 Selected Device : 3s500eft256-5 
 
- Number of Slices:                     2448  out of   4656    52%  
- Number of Slice Flip Flops:             49  out of   9312     0%  
- Number of 4 input LUTs:               4669  out of   9312    50%  
+ Number of Slices:                     1804  out of   4656    38%  
+ Number of Slice Flip Flops:             29  out of   9312     0%  
+ Number of 4 input LUTs:               3316  out of   9312    35%  
  Number of IOs:                           6
  Number of bonded IOBs:                   6  out of    190     3%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -334,7 +327,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 clk50Mghz                          | BUFGP                  | 14    |
-temp                               | NONE(address_0)        | 35    |
+temp                               | NONE(address_0)        | 15    |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -346,9 +339,9 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 6.699ns (Maximum Frequency: 149.287MHz)
+   Minimum period: 6.738ns (Maximum Frequency: 148.423MHz)
    Minimum input arrival time before clock: 3.227ns
-   Maximum output required time after clock: 15.798ns
+   Maximum output required time after clock: 15.871ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -357,10 +350,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk50Mghz'
-  Clock period: 6.699ns (frequency: 149.287MHz)
+  Clock period: 6.738ns (frequency: 148.423MHz)
   Total number of paths / destination ports: 1094 / 27
 -------------------------------------------------------------------------
-Delay:               6.699ns (Levels of Logic = 11)
+Delay:               6.738ns (Levels of Logic = 11)
   Source:            clk/counter_1 (FF)
   Destination:       clk/counter_0 (FF)
   Source Clock:      clk50Mghz rising
@@ -380,19 +373,19 @@ Delay:               6.699ns (Levels of Logic = 11)
      MUXCY:CI->O           1   0.051   0.000  clk/Madd_old_counter_1_add0000_cy<6> (clk/Madd_old_counter_1_add0000_cy<6>)
      MUXCY:CI->O           1   0.051   0.000  clk/Madd_old_counter_1_add0000_cy<7> (clk/Madd_old_counter_1_add0000_cy<7>)
      XORCY:CI->O           1   0.699   0.387  clk/Madd_old_counter_1_add0000_xor<8> (clk/old_counter_1_add0000<8>)
-     LUT3:I2->O            1   0.612   0.387  clk/clk1hz_buff_cmp_eq00008 (clk/clk1hz_buff_cmp_eq00008)
-     LUT4:I2->O           13   0.612   0.836  clk/clk1hz_buff_cmp_eq000046 (clk/clk1hz_buff_cmp_eq0000)
+     LUT3:I2->O            1   0.612   0.426  clk/clk1hz_buff_cmp_eq00005 (clk/clk1hz_buff_cmp_eq00005)
+     LUT4:I1->O           13   0.612   0.836  clk/clk1hz_buff_cmp_eq000043 (clk/clk1hz_buff_cmp_eq0000)
      FDR:R                     0.795          clk/counter_0
     ----------------------------------------
-    Total                      6.699ns (4.557ns logic, 2.142ns route)
-                                       (68.0% logic, 32.0% route)
+    Total                      6.738ns (4.557ns logic, 2.181ns route)
+                                       (67.6% logic, 32.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'temp'
-  Clock period: 5.326ns (frequency: 187.758MHz)
-  Total number of paths / destination ports: 727 / 70
+  Clock period: 5.189ns (frequency: 192.717MHz)
+  Total number of paths / destination ports: 345 / 30
 -------------------------------------------------------------------------
-Delay:               5.326ns (Levels of Logic = 9)
+Delay:               5.189ns (Levels of Logic = 10)
   Source:            address_0 (FF)
   Destination:       address_0 (FF)
   Source Clock:      temp rising
@@ -402,20 +395,21 @@ Delay:               5.326ns (Levels of Logic = 9)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q            423   0.514   1.330  address_0 (address_0)
-     LUT1:I0->O            1   0.612   0.000  Mcompar_address_cmp_lt0000_cy<0>_rt (Mcompar_address_cmp_lt0000_cy<0>_rt)
+     FDR:C->Q            757   0.514   1.351  address_0 (address_0)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_address_cmp_lt0000_lut<0> (Mcompar_address_cmp_lt0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Mcompar_address_cmp_lt0000_cy<0> (Mcompar_address_cmp_lt0000_cy<0>)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_address_cmp_lt0000_cy<1> (Mcompar_address_cmp_lt0000_cy<1>)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_address_cmp_lt0000_cy<2> (Mcompar_address_cmp_lt0000_cy<2>)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_address_cmp_lt0000_cy<3> (Mcompar_address_cmp_lt0000_cy<3>)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_address_cmp_lt0000_cy<4> (Mcompar_address_cmp_lt0000_cy<4>)
      MUXCY:CI->O           1   0.052   0.000  Mcompar_address_cmp_lt0000_cy<5> (Mcompar_address_cmp_lt0000_cy<5>)
-     MUXCY:CI->O           1   0.052   0.000  Mcompar_address_cmp_lt0000_cy<6> (Mcompar_address_cmp_lt0000_cy<6>)
-     MUXCY:CI->O          35   0.289   1.074  Mcompar_address_cmp_lt0000_cy<7> (Mcompar_address_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_address_cmp_lt0000_cy<6> (Mcompar_address_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_address_cmp_lt0000_cy<7> (Mcompar_address_cmp_lt0000_cy<7>)
+     MUXCY:CI->O          15   0.289   0.864  Mcompar_address_cmp_lt0000_cy<8> (Mcompar_address_cmp_lt0000_cy<8>)
      FDR:R                     0.795          address_0
     ----------------------------------------
-    Total                      5.326ns (2.923ns logic, 2.404ns route)
-                                       (54.9% logic, 45.1% route)
+    Total                      5.189ns (2.974ns logic, 2.215ns route)
+                                       (57.3% logic, 42.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50Mghz'
@@ -439,47 +433,44 @@ Offset:              3.227ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'temp'
-  Total number of paths / destination ports: 59898 / 4
+  Total number of paths / destination ports: 24794 / 4
 -------------------------------------------------------------------------
-Offset:              15.798ns (Levels of Logic = 16)
-  Source:            address_1 (FF)
+Offset:              15.871ns (Levels of Logic = 13)
+  Source:            address_2 (FF)
   Destination:       data<1> (PAD)
   Source Clock:      temp rising
 
-  Data Path: address_1 to data<1>
+  Data Path: address_2 to data<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q            467   0.514   1.342  address_1 (address_1)
-     LUT2:I0->O           40   0.612   1.105  rom/Mrom_data1101 (rom/Mrom_data110)
-     LUT4:I2->O            1   0.612   0.426  address<6>15_SW0 (N245)
-     LUT3:I1->O            1   0.612   0.000  address<6>15_F (N712)
-     MUXF5:I0->O           3   0.278   0.454  address<6>15 (N611)
-     LUT4:I3->O            1   0.612   0.000  address<8>1191 (address<8>1191)
-     MUXF5:I1->O           4   0.278   0.568  address<8>119_f5 (address<8>119)
-     LUT4:I1->O            1   0.612   0.000  address<8>11351 (address<8>1135)
-     MUXF5:I1->O           1   0.278   0.426  address<8>1135_f5 (address<8>21)
-     LUT3:I1->O            1   0.612   0.000  rom/Mrom_data22101_101 (rom/Mrom_data22101_101)
-     MUXF5:I1->O           1   0.278   0.000  rom/Mrom_data22101_9_f5 (rom/Mrom_data22101_9_f5)
-     MUXF6:I0->O           1   0.451   0.000  rom/Mrom_data22101_7_f6 (rom/Mrom_data22101_7_f6)
-     MUXF7:I1->O           1   0.451   0.000  rom/Mrom_data22101_6_f7 (rom/Mrom_data22101_6_f7)
-     MUXF8:I1->O           2   0.451   0.410  rom/Mrom_data22101_5_f8 (rom/Mrom_data22101_5_f8)
-     LUT4:I2->O            1   0.612   0.000  address<14>1692 (address<14>1691)
-     MUXF5:I0->O           1   0.278   0.357  address<14>169_f5 (data_1_OBUF)
+     FDR:C->Q            989   0.514   1.351  address_2 (address_2)
+     LUT2:I0->O          120   0.612   1.165  address<4>107111 (rom/Mrom_data1199)
+     LUT4:I1->O            2   0.612   0.410  address<4>_mmx_out5511 (address<4>_mmx_out551)
+     LUT4:I2->O            2   0.612   0.410  rom/Mrom_data13871_2627 (rom/Mrom_data13871_2626)
+     LUT3:I2->O            1   0.612   0.426  address<6>201 (address<6>211)
+     LUT3:I1->O            1   0.612   0.000  rom/Mrom_data11271_2425 (rom/Mrom_data11271_2425)
+     MUXF5:I1->O           1   0.278   0.426  rom/Mrom_data11271_23_f5_11 (rom/Mrom_data11271_23_f512)
+     LUT2:I1->O            1   0.612   0.426  address<14>101 (address<14>101)
+     LUT4:I1->O            1   0.612   0.000  address<14>208_SW01 (address<14>208_SW0)
+     MUXF5:I1->O           2   0.278   0.449  address<14>208_SW0_f5 (N466)
+     LUT4:I1->O            1   0.612   0.000  address<14>263_SW01 (address<14>263_SW0)
+     MUXF5:I1->O           1   0.278   0.426  address<14>263_SW0_f5 (N370)
+     LUT3:I1->O            1   0.612   0.357  address<14>263 (data_1_OBUF)
      OBUF:I->O                 3.169          data_1_OBUF (data<1>)
     ----------------------------------------
-    Total                     15.798ns (10.710ns logic, 5.088ns route)
-                                       (67.8% logic, 32.2% route)
+    Total                     15.871ns (10.025ns logic, 5.846ns route)
+                                       (63.2% logic, 36.8% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 440.00 secs
-Total CPU time to Xst completion: 439.44 secs
+Total REAL time to Xst completion: 230.00 secs
+Total CPU time to Xst completion: 230.02 secs
  
 --> 
 
-Total memory usage is 333872 kilobytes
+Total memory usage is 331888 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

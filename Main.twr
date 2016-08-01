@@ -44,7 +44,7 @@ Setup/Hold to clock clk50Mghz
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-c           |    1.362(R)|   -0.037(R)|clk50Mghz_BUFGP   |   0.000|
+c           |    2.443(R)|   -0.902(R)|clk50Mghz_BUFGP   |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk50Mghz
@@ -52,18 +52,18 @@ Clock to Setup on destination clock clk50Mghz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk50Mghz      |    6.020|         |         |         |
+clk50Mghz      |    6.058|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue Jun 14 20:22:46 2016 
+Analysis completed Sat Jun 18 21:29:06 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 148 MB
+Peak Memory Usage: 138 MB
 
 
 

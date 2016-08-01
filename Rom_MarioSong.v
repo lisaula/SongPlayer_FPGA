@@ -10,7 +10,7 @@ module Rom_MarioSong(
 		data = rom_content[address];
 		
 	initial begin
-		$readmemh("MarioSong.mif",rom_content,0,32767);
+		$readmemh("new_song.mif",rom_content,0,32767);
 	end
 
 

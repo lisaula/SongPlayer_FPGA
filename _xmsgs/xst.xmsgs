@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="2546" delta="old" >&quot;<arg fmt="%s" index="1">Rom_MarioSong.v</arg>&quot; line <arg fmt="%d" index="2">13</arg>: reading initialization file &quot;<arg fmt="%s" index="3">MarioSong.mif</arg>&quot;.
+<msg type="info" file="Xst" num="2546" delta="old" >&quot;<arg fmt="%s" index="1">Rom_MarioSong.v</arg>&quot; line <arg fmt="%d" index="2">13</arg>: reading initialization file &quot;<arg fmt="%s" index="3">new_song.mif</arg>&quot;.
 </msg>
 
 <msg type="warning" file="Xst" num="905" delta="old" >&quot;<arg fmt="%s" index="1">Rom_MarioSong.v</arg>&quot; line <arg fmt="%d" index="2">10</arg>: One or more signals are missing in the sensitivity list of always block. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
@@ -15,7 +15,7 @@
 <msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">rom_content</arg>&gt; is used but never assigned. Tied to default value.
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

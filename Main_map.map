@@ -9,43 +9,109 @@ Target Device  : xc3s500e
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Jun 14 20:20:48 2016
+Mapped Date    : Sat Jun 18 21:27:01 2016
 
 Mapping design into LUTs...
 Running directed packing...
-WARNING:Pack:266 - The function generator rom/Mrom_data11101_251 failed to merge
-   with F5 multiplexer rom/Mrom_data33101_24_f5_0.  There is a conflict for the
+WARNING:Pack:266 - The function generator rom/Mrom_data16411_267 failed to merge
+   with F5 multiplexer rom/Mrom_data16411_25_f5_2.  There is a conflict for the
    FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data11101_2612 failed to
-   merge with F5 multiplexer rom/Mrom_data33101_25_f5_5.  There is a conflict
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_2440 failed to
+   merge with F5 multiplexer rom/Mrom_data11271_23_f5_20.  There is a conflict
    for the FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data11101_275 failed to merge
-   with F5 multiplexer rom/Mrom_data33101_26_f5_2.  There is a conflict for the
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_2024 failed to merge
+   with F5 multiplexer rom/Mrom_data11271_23_f5_1.  There is a conflict for the
    FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data11101_2711 failed to
-   merge with F5 multiplexer rom/Mrom_data33101_26_f5_5.  There is a conflict
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_253 failed to merge
+   with F5 multiplexer rom/Mrom_data11271_24_f5_1.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator address<4>_mmx_out1101 failed to merge
+   with F5 multiplexer rom/Mrom_data11271_27_f5_7.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_2285 failed to merge
+   with F5 multiplexer rom/Mrom_data11271_27_f5_9.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_217 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_20_f5_6.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data13871_2114 failed to
+   merge with F5 multiplexer rom/Mrom_data13871_20_f5_7.  There is a conflict
    for the FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data11101_2715 failed to
-   merge with F5 multiplexer rom/Mrom_data11101_26_f5_71_f5.  There is a
-   conflict for the FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data12941 failed to merge
-   with F5 multiplexer rom/Mrom_data11101_243_f5.  There is a conflict for the
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_2517 failed to
+   merge with F5 multiplexer rom/Mrom_data13871_21_f5_4.  There is a conflict
+   for the GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_235 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_22_f5_3.  There is a conflict for the
    FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data11101_25 failed to merge
-   with F5 multiplexer rom/Mrom_data33101_24_f5.  There is a conflict for the
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_239 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_22_f5_5.  There is a conflict for the
    FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data11101_27 failed to merge
-   with F5 multiplexer rom/Mrom_data33101_26_f5.  There is a conflict for the
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_203 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_22_f5_7.  There is a conflict for the
    FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data11101_284 failed to merge
-   with F5 multiplexer rom/Mrom_data33101_27_f5.  There is a conflict for the
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_2641 failed to
+   merge with F5 multiplexer rom/Mrom_data13871_23_f5_0.  There is a conflict
+   for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_214 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_23_f5_4.  There is a conflict for the
    FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data11101_30 failed to merge
-   with F5 multiplexer rom/Mrom_data33101_29_f5.  There is a conflict for the
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_258 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_24_f5_2.  There is a conflict for the
    FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator rom/Mrom_data15091 failed to merge
-   with F5 multiplexer rom/Mrom_data11101_2712_f5.  There is a conflict for the
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_2516 failed to
+   merge with F5 multiplexer rom/Mrom_data13871_24_f5_6.  There is a conflict
+   for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_2422 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_25_f5_0.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data13871_1918 failed to
+   merge with F5 multiplexer rom/Mrom_data13871_17_f5_6.  There is a conflict
+   for the GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_2153 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_26_f5_2.  There is a conflict for the
    FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator address<4>_mmx_out211 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_26_f5_9.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator address<5>2141 failed to merge with F5
+   multiplexer rom/Mrom_data13871_19_f5_2.  There is a conflict for the GYMUX. 
+   The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_3211 failed to
+   merge with F5 multiplexer rom/Mrom_data13871_27_f5_5.  There is a conflict
+   for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_204 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_19_f5_7.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data13871_2627 failed to
+   merge with F5 multiplexer rom/Mrom_data13871_25_f5_10.  There is a conflict
+   for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_225 failed to merge
+   with F5 multiplexer rom/Mrom_data11271_21_f5_21_f5.  There is more than one
+   F5MUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_2225 failed to merge
+   with F5 multiplexer rom/Mrom_data7521_21_f5_9.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_2611 failed to merge
+   with F5 multiplexer rom/Mrom_data7521_25_f5_3.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data11271_2739 failed to
+   merge with F5 multiplexer rom/Mrom_data13871_24_f5.  There is a conflict for
+   the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_258 failed to merge
+   with F5 multiplexer rom/Mrom_data13871_29_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_2137 failed to merge
+   with F5 multiplexer rom/Mrom_data7521_20_f5_17.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator address<4>_mmx_out1531 failed to merge
+   with F5 multiplexer rom/Mrom_data7521_21_f5_16.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_2617 failed to merge
+   with F5 multiplexer rom/Mrom_data7521_24_f5_10.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator rom/Mrom_data7521_2727 failed to merge
+   with F5 multiplexer rom/Mrom_data7521_25_f5_13.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
@@ -55,18 +121,18 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:   11
+Number of warnings:   33
 Logic Utilization:
-  Number of Slice Flip Flops:            49 out of   9,312    1%
-  Number of 4 input LUTs:             4,627 out of   9,312   49%
+  Number of Slice Flip Flops:            29 out of   9,312    1%
+  Number of 4 input LUTs:             3,276 out of   9,312   35%
 Logic Distribution:
-  Number of occupied Slices:          3,009 out of   4,656   64%
-    Number of Slices containing only related logic:   3,009 out of   3,009 100%
-    Number of Slices containing unrelated logic:          0 out of   3,009   0%
+  Number of occupied Slices:          2,055 out of   4,656   44%
+    Number of Slices containing only related logic:   2,055 out of   2,055 100%
+    Number of Slices containing unrelated logic:          0 out of   2,055   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       4,687 out of   9,312   50%
-    Number used as logic:             4,627
-    Number used as a route-thru:         60
+  Total Number of 4 input LUTs:       3,403 out of   9,312   36%
+    Number used as logic:             3,276
+    Number used as a route-thru:        127
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -74,11 +140,11 @@ Logic Distribution:
   Number of bonded IOBs:                  6 out of     190    3%
   Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                5.19
+Average Fanout of Non-Clock Nets:                5.31
 
-Peak Memory Usage:  227 MB
-Total REAL time to MAP completion:  7 secs 
-Total CPU time to MAP completion:   7 secs 
+Peak Memory Usage:  222 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   4 secs 
 
 NOTES:
 

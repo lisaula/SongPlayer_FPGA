@@ -10,13 +10,13 @@ module Main(
 	wire clk_s;
 	reg temp;
 	assign clk_s = temp;
-	CLK_Divider #(.counter_limit(13'hc35))clk(.clk(clk50Mghz),.clk1hz(clk_c));
+	CLK_Divider #(.counter_limit(13'h61b))clk(.clk(clk50Mghz),.clk1hz(clk_c));
 
 	Rom_MarioSong rom(address,data);
 
 	always @(posedge clk_s)
 	begin
-		if(address < 25629)
+		if(address < 25195)
 		begin
 			address = address+1;
 		end
